@@ -1,0 +1,27 @@
+      Formas de agregar codigo javascript al proyecto:
+
+
+-> Agregando codigo JavaScript dentro del archivo HTML, usando la etiqueta <script></script>, normalmente va antes de finalizar la etiqueta (esto es porque primero queremos que cargue el documento HTML para luego ejecutar el codigo JavaScript) <body></body>. Dentro de esta introduciremos nuestro codigo javascript, pero si la queremos agregar dentro de la etiqeta <head></head> debemos introducir la propiedad 'defer' dentro de la etiqueta <script></script> para asi decirle al navegador que primero cargue el documento HTML y luego cargue el codigo JavaScript, <script defer></script>.
+
+<script>
+      document.write("Hola mundo desde la etiqueta script");
+    </script>
+
+Podemos agregar etiqetas HTML:
+ <script>
+      document.write("<h2>Hola mundo desde la etiqueta Script</h2>");
+    </script>
+
+Podemos agregar alertas en pantalla:
+<script>
+      document.write("<h2>Hola mundo desde la etiqueta Script</h2>");
+      alert("Soy una alerta desde la etiqueta Script");
+    </script>
+
+Y muchas cosas más... ESTAS ES LA FORMA MENOS UTILIZADA.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+-> Mediante un archivo JavaScript con extencion .js, este sera un archivo externo, tenemos que relacionarlo dentro de nuestro documento HTML dentro de la etiqueta <head></head>.
+
+ <script defer src="app.js"></script>
