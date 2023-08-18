@@ -1,0 +1,25 @@
+        ¿Qué son las variables?
+Son espacios en memoria donde podemos guardar información.
+
+En JavaScript:
+
+var -> Se utiliza para variables globales.
+let -> Tiene un alcance de tipo bloque. 
+const -> Constantes.
+
+Reglas:
+
+-> Deben empezar por letras, $ o un guion bajo ( _ ).
+
+Tipos de datos que podemos guardar en las variables:
+
+-> string : Cadena de texto.
+-> number : Números.
+-> boolean : Booleano (true o false).
+-> object : Objeto.
+-> function : Funciones.
+
+-> null : Valor Nulo.
+-> undefined : Valor sin definir (es el valor por defecto).
+
+Podemos sobreescribir variables sin importar el tipo de dato.
