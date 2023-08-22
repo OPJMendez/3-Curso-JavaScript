@@ -23,7 +23,7 @@ const userList = {
     videoGames: true,
   },
 };
-// donde 'name' es la propiedad y 'Carlos' el valor.
+// donde 'name' es la propiedad (llaves) y 'Carlos' el valor.
 
 // Para acceder a un elemento de la propiedad
 //console.log(userList.age);
