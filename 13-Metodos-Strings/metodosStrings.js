@@ -38,5 +38,5 @@ const userQuote = "follow your dreams, keep sleeping";
 console.log(userQuote.split("-"));
 
 /* toUpperCase() - toLowerCase() 
-Transforma la cadena a mayusculas - Transforma la cadena a minusculas.
+Transforma la cadena a  mayusculas - Transforma la cadena a minusculas.
 */
