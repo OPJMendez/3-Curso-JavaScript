@@ -1,0 +1,67 @@
+npm install rollup --save-dev -> Instalar rollup en un proyecto. (npm install rollup --global -> para instalarlo de forma global)
+
+(utilizamos npx cuando la libreria esta instalada solamente en el proyecto)
+
+npx rollup -> verificar la instalación de rollup.
+
+Creamos una carpeta llamada 'src', esta sera la carpeta fuente (ó código fuente) del proyecto, tendra todos los archivos de Javascript.
+
+Tambien la carpeta 'public' tendra archivos que sera publicos para el navegador, por ejemplo estilos css, icons, images etc, tambien tendremos ahí el archivo compilado o archivo final que le pasaremos al documento HTML.
+
+Dentro de la carpeta 'src' tendremos un archivos .js llamado 'main' ó 'index' el cual sera el archivo principal, en este archivo importaremos código de otros archivos.
+
+¿Como importar código desde otros archivos?
+
+// desde donde queremos traer el código.
+
+export default () => {
+  console.log("Carrito funcionando");
+};
+
+// en el archivo donde queremos tener el código.
+
+import nombreDeFuncion from "./archivo";
+
+nombreDeFuncion();
+
+Luego debemos empaquetar ambos archivos y códigos en un archivo final (Tambien llamado bundle).
+
+npx rollup src/main.js -f cjs -> con esto simplemente mostrara el resultado de la 'operación' por consola.
+
+Si queremos que lo guarde en un archivo:
+
+npx rollup src/main.js -o public/bundle.js -f cjs
+
+¿Que pasaría si el archivo que exportamos sufre cambios?
+
+Tendriamos que volver a compilar usando el :
+npx rollup src/main.js -o public/bundle.js -f cjs
+
+Pero podemos tener un archivo de configuración para poder actualizar sin perder tiempo, entonces debemos crear un archivo de configuración en la raiz del proyecto llamado:
+
+rollup.config.js
+
+luego dentro de ese archivo copiamos:
+
+export default {
+	input: 'src/main.js',
+	output: {
+		file: 'public/bundle.js',
+		format: 'cjs'
+	}
+};
+
+para asi poder usar el comando:
+
+npx rollup -c
+
+O podemos establecer para que la compilación sea automatica, esto lo hacemos dentro del archivo package.json dentro del bloque "scripts"
+
+"scripts": {
+    "build": "rollup --config --watch"
+  }
+
+Luego:
+
+por consola -> npm run build (debemos crear "type": "module", en el archivo package.json)
+"cortamos una ejecución con control + c"
