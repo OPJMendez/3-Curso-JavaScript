@@ -1,0 +1,77 @@
+Distintas formas de exportar y importar.
+
+No se puede exportar cualquier tipo de código, solamente variables y funciones.
+
+        PRIMERA FORMA 
+
+namedExport -> Exportaciones en base a nombres.
+Ejemplo con una variable:
+        export const name = "JJ";
+
+Ejemplo con una funcion:
+        export const getPost = () => {
+        return ["post", "post1", "post2", "post3"];
+        };
+
+Al importar:
+        import { name,getPost } from "./namedExports";
+
+
+RECUERDA COMPILAR EL ARCHIVO PARA PODER EJECUTARLO.
+
+OTRA FORMA SERIA UTILIZAR LA PALABRA export al final del documento
+
+        const name = "JJ";
+
+        const getPost = () => {
+        return ["post", "post1", "post2", "post3"];
+        };
+
+        export { name, getPost };
+
+A la hora de importar podemos utilizar alias para no generar confuciones con otras variables y funciones.
+
+import { name as nameImported } from "./namedExports";
+
+
+
+        Namespace Imports
+Importamos todas las variables y funciones que fueron exportadas:
+
+        import * as data from "./namedExports";
+
+Luego accedemos a la variable o funcion :
+
+        console.log(data.name);
+
+
+
+
+        Default Exports (mono-exports)
+
+Cuando solamente queremos exportar una función:
+
+export default () => {
+  return {
+    name: "Juana",
+    email: "juan@gmail.com",
+  };
+};
+
+Cuando se vaya a import no necesitaremos llaves y podremos llamarla como queramos
+
+        import getUser from "./defaultExports";
+        console.log(getUser());
+
+Al final del documento:
+
+const getUser = () => {
+return {
+        name: "Juana",
+        email: "juan@gmail.com",
+};
+};
+
+export default getUser;
+
+import getMyUser from "./defaultExports";
