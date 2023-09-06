@@ -58,7 +58,7 @@ export default () => {
   };
 };
 
-Cuando se vaya a import no necesitaremos llaves y podremos llamarla como queramos
+Cuando se vaya a import no necesitaremos llaves y PODREMOS LLAMARLO COMO QUERAMOS
 
         import getUser from "./defaultExports";
         console.log(getUser());
@@ -75,3 +75,12 @@ return {
 export default getUser;
 
 import getMyUser from "./defaultExports";
+
+
+        Empty Exports (if,bucles etc)
+Carga todo el código pero sin hacer ningun objeto.
+        import "./emptyExports";
+
+Ejecutara todo el código que encuentre menos variables
+
+funciones, estas tendremos que exportalas.
