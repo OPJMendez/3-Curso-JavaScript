@@ -16,10 +16,10 @@ console.log('Puntos y
 comas al final de cada sentencia');
 ```
 
-**Comentarios en JavaScript**(de una linea - Tipo bloque): // Una linea
+**Comentarios en JavaScript**
 
 ```javascript
-//window.alert();
+//window.alert(""Comentario de una linea");
 
 /* 
 console.log('Comentario');
