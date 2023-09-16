@@ -1,0 +1,63 @@
+Browser Object Model, es un objeto que nos permite acceder a propiedades y métodos que el navegador web nos va dar acceso.
+
+Window -> Contiene un gran cantidad de métodos y propiedades que nos permite trabajar con la ventana.
+
+Ejemplo: 
+        window.alert("hello"); 
+        alert("hello");
+funcionan igual porque son métodos globales.
+
+-> Ancho y alto de la ventana:
+        console.log(
+        `la ventana tiene de ancho: ${window.innerWidth}, y ${window.innerHeight} de alto`
+        );
+
+        Abrir ventanas:
+-> window.open()
+Nos permite abrir, cerrar, cambiar tamaño de ventanas del navegador.
+Nota: Es posible que el navegador te pida permisos para abrir una nueva ventana.
+
+1er parametro: Dirección (URL) de la nueva ventana.
+2do parametro: Nombre de la ventana.
+3er parametro: cadena de texto de opciones.
+
+const openWindow = () => {
+  window.open('https://github.com/', 'New Window', 'width=750px,height=400px');
+};
+Nos devuelve un objeto para acceder a esa ventana.
+
+        Podemos manipular la nueva ventana:
+let newWindow;
+const openWindow = () => {
+  newWindow = window.open('', 'New Window', 'width=750px,height=400px');
+  newWindow.document.write('<h1>Manipulando la nueva ventana</h1>');
+};
+
+        Cerramos la ventana
+const closeWindow = () => {
+  newWindow.window.closeWindow();
+};
+
+ó
+
+const closeWindow = () => {
+  newWindow.close();
+};
+
+
+Propiedades para acceder a la pantalla (Monitor):
+
+        Screen Object
+-> Representa la pantalla del usuario 
+
+console.log(`Ancho de pantalla: ${window.screen.width}`);
+console.log(`Alto de pantalla: ${window.screen.height}`);
+
+        Location
+Obtenemos la URL de la barra de direcciones, tambien lo usamos paraa cargar nuevos documentos.
+
+console.log(window.location); -> Obtenemos la URL
+
+console.log(window.location.href); -> Obtenemos la barra de direcciones
+
+NOTA PODEMOS OMITIR LA PALABRA 'window'

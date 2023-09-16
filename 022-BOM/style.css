@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Victor Mono;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #eaeaea;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 88px;
+}
+button {
+  width: 120px;
+  height: 24px;
+  background-color: #eaeaea;
+  color: #000;
+}
+button:hover {
+  background-color: #000;
+  color: #eaeaea;
+}
