@@ -2,17 +2,16 @@
 const fetchPosts = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const posts = ["post 1", "post 2", "post 3", "post 4", "post 5"];
+      const posts = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
       const error = true;
       if (error) {
-        reject("Error getting posts");
+        reject('Error getting posts');
       } else {
         resolve(posts);
       }
     }, 2000);
   });
 };
-
 // Declaramos que la función se asincrona con async:
 const showPosts = async () => {
   // Atrapamos errores con try and catch:
