@@ -5,13 +5,25 @@ interactivos.
 
 ## Notas importantes:
 
--> JavaScript es sensible a mayusculas y minisculas.
+**JavaScript es sensible a mayusculas y minisculas.**
 
--> Respetar la sintaxis de tipo camelCase. (getElementById).
+**Respetar la sintaxis de tipo camelCase. (getElementById).**
 
--> Punto y coma al final de cada sentencia. (console.log('Puntos y comas al
-final de cada sentencia');)
+**Punto y coma al final de cada sentencia.** _ejemplo:_
 
--> Comentarios en JavaScript (de una linea - Tipo bloque): // Una linea
+```javascript
+console.log('Puntos y
+comas al final de cada sentencia');
+```
 
-/_ tipo bloque _/
+**Comentarios en JavaScript**(de una linea - Tipo bloque): // Una linea
+
+```javascript
+//window.alert();
+
+/* 
+console.log('Comentario');
+console.log('tipo');
+console.log('bloque');
+*/
+```
