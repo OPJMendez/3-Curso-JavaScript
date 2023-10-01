@@ -1,3 +1,6 @@
+# Arreglos
+
+```js
 const listObjects = [
   'Carro',
   13,
@@ -20,3 +23,4 @@ listColors[3] = 'yellow';
 listColors.push('pink');
 //console.log(listColors.length);
 console.log('el arreglo colores tiene: ' + listColors.length + ' elementos');
+```
