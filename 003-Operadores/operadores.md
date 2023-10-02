@@ -88,3 +88,66 @@ if (numberOne != numberTwo) {
   console.log('');
 }
 ```
+
+- **Diferente en valor y en tipo de dato**
+
+```javascript
+/==
+```
+
+- **mayor que**
+
+```javascript
+>
+```
+
+- **menor que**
+
+```javascript
+<
+```
+
+- **mayor o igual que**
+
+```javascript
+>=
+```
+
+- **menor o igual que**
+
+```javascript
+<=
+```
+
+- **Operador Ternario ?**
+
+Nos permite hacer comparaciones y ejecutar el codigo si se cumple una condición.
+
+```javascript
+const result =
+  7 > 8
+    ? 'el primer valor es mayor que el segundo valor'
+    : 'el segundo valor es mayor que el primer valor';
+console.log(result);
+```
+
+## Operadores Logicos
+
+```javascript
+&& and
+|| or
+! not
+
+const name = 'Kiara';
+const age = 18;
+const ticket = true;
+const permise = true;
+const giveAccest = (age >= 18 && ticket) || permise;
+```
+
+### ! Invierte valores
+
+```javascript
+const variable = false;
+console.log(!variable);
+```

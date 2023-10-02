@@ -1,4 +1,4 @@
-Browser Object Model, es un objeto que nos permite acceder a propiedades y métodos que el navegador web nos va dar acceso.
+
 
 Window -> Contiene un gran cantidad de métodos y propiedades que nos permite trabajar con la ventana.
 
