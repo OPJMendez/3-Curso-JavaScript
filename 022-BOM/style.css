@@ -18,10 +18,19 @@ h1 {
   font-size: 88px;
 }
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 120px;
   height: 24px;
+  border-radius: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   background-color: #eaeaea;
   color: #000;
+  cursor: pointer;
+  margin: 2px;
 }
 button:hover {
   background-color: #000;

@@ -1,2 +1,3 @@
-console.log(location.href);
-/* 9:10:25 */
+const forwardPage = () => {
+  history.forward();
+};
