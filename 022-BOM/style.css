@@ -17,22 +17,45 @@ body {
 h1 {
   font-size: 88px;
 }
-button {
+.button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 120px;
-  height: 24px;
-  border-radius: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  background-color: #eaeaea;
-  color: #000;
-  cursor: pointer;
-  margin: 2px;
 }
-button:hover {
-  background-color: #000;
+.buttons {
+  width: 240px;
+  height: 64px;
+  font-size: 36px;
+  border-radius: 64px;
+  margin-right: 10px;
+}
+#button-init {
+  background-color: #32cd32;
+}
+#button-init:hover {
+  background-color: #1f461f;
   color: #eaeaea;
+}
+#button-stop {
+  background-color: #ff0000;
+}
+#button-stop:hover {
+  background-color: #421717;
+  color: #eaeaea;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+  }
+  .button-container {
+    display: block; /* Cambiar a bloque para apilar los botones en smartphones */
+  }
+  .buttons {
+    width: 100%; /* Ancho completo para ocupar el ancho de la pantalla */
+    height: 50px; /* Altura más pequeña para dispositivos móviles */
+    font-size: 24px; /* Tamaño de fuente más pequeño */
+    border-radius: 12px; /* Redondear los bordes menos */
+    margin-right: 0; /* Eliminar margen entre botones */
+    margin-bottom: 10px; /* Agregar margen inferior entre botones */
+  }
 }

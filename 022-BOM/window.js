@@ -1,3 +1,1 @@
-const forwardPage = () => {
-  history.forward();
-};
+
