@@ -1,4 +1,15 @@
-const makeCookie = () => {
-  const expirationDate = new Date('2023-11-03T10:22:00Z').toUTCString();
-  document.cookie = `name=James; expires=${expirationDate}`;
+const login = () => {
+  const userName = prompt('Usuario: ');
+  document.cookie = `name=${userName}`;
+  const userPassword = prompt('Password: ');
+  document.cookie = `password=${userPassword}`;
+  alert('Sesión iniciada');
 };
+
+/* Forma para obtener el usuario de las cookies */
+let user;
+const cookies = document.cookie.split(';');
+cookies.forEach((cookie) => {
+  console.log(cookie);
+});
+/* 9:54:34 */
