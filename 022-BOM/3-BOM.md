@@ -2,16 +2,16 @@
 
 ## Cookies
 
-```
-Las cookies son pequeños archivos de texto que guardan información en la computador del usuario, con esto evitamos perder la información cada vez que se actualice la pagina.
+Las cookies son pequeños archivos de texto que guardan información en la
+computador del usuario, con esto evitamos perder la información cada vez que se
+actualice la pagina.
 
 Por ejemplo:
 
-Guardar datos del usuario que no queremos guardar en un base de datos, estos datos pueden ser:
+Guardar datos del usuario que no queremos guardar en un base de datos, estos
+datos pueden ser:
 
 - Configuraciones, preferencias etc
-
-```
 
 _sintaxis_
 
