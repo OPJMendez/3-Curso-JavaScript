@@ -53,3 +53,41 @@ const login = () => {
   console.log(document.cookie);
 };
 ```
+
+---
+
+- **Forma para obtener el usuario de las cookies**
+
+```js
+let user;
+const cookies = document.cookie.split(';');
+cookies.forEach((cookie) => {
+  console.log(cookie.split(';'[0]));
+});
+```
+
+_reto_
+
+```js
+const login = () => {
+  const userName = prompt('Usuario: ');
+  document.cookie = `name=${userName}`;
+  const userPassword = prompt('Password: ');
+  document.cookie = `password${userPassword}`;
+  alert('Sesión iniciada');
+};
+
+/* Forma para obtener el usuario de las cookies */
+let user;
+let password;
+const cookies = document.cookie.split(';');
+
+cookies.forEach((cookie) => {
+  const propiedad = cookie.split('=')[0];
+  if (propiedad === 'name') {
+    user = cookie.split('=')[1];
+  }
+});
+console.log(user);
+console.log(password);
+```
