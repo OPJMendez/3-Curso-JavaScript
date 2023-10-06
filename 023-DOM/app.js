@@ -29,4 +29,6 @@ const addBox = () => {
 
   afterend - despues del elemento padre (despues del elemento padre)
   */
+
+  mainContainer.insertAdjacentElement('afterbegin', newSection);
 };
