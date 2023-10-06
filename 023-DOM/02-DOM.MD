@@ -15,31 +15,62 @@ const addBox = () => {
   newSection.setAttribute('id', 'nuevo-id');
   newSection.setAttribute('class', 'caja activa');
 
-  // Agregamos el elemento al DOM
+  // Accedemos a un elemento del elemento DOM
 
   const mainContainer = document.getElementById('contenedor1');
+};
+```
 
-  // Diferentes formas de agregar el elemento:
+## Agregar elementos - .appendChild()
 
-  // .appendChild() - Agrega un elemento al final
+Agrega un elemento al final
 
-  mainContainer.appendChild(newSection);
+```js
+mainContainer.appendChild(newSection);
+```
 
-  /* .insertAdjacentElement()
-  
-  Nos permite agregar un elemento.
+---
 
-  Valores que recibe:
+## Agregar elementos - insertAdjacentElement()
 
-  afterbegin - como primer elemento (como primer elemento del padre)
+Nos permite agregar un elemento.
 
-  beforebegin - antes del elemento padre (antes del elemento padre)
+Valores que recibe:
 
-  beforeend - como ultimo elemento (como ultimo elemento del elemento padre)
+- afterbegin - como primer elemento (como primer elemento del padre)
 
-  afterend - despues del elemento padre (despues del elemento padre)
-  */
+- beforebegin - antes del elemento padre (antes del elemento padre)
 
-  mainContainer.insertAdjacentElement('afterbegin', newSection);
+- beforeend - como ultimo elemento (como ultimo elemento del elemento padre)
+
+- afterend - despues del elemento padre (despues del elemento padre)
+
+```js
+mainContainer.insertAdjacentElement('afterbegin', newSection);
+```
+
+---
+
+## Reemplazar elementos - .replaceWith()
+
+Nos permite remplazar el elemento por otro
+
+```js
+document.querySelector('#contenedor1 .caja').replaceWith(newSection);
+```
+
+---
+
+## Eliminar elementos - .removeChild()
+
+```js
+const deleteBox = () => {
+  const container = document.getElementById('contenedor1');
+  const boxToDelete = container.querySelector('.caja');
+  if (boxToDelete) {
+    container.removeChild(boxToDelete);
+  } else {
+    console.log('there are no more boxes to eliminate');
+  }
 };
 ```
