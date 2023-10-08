@@ -1,10 +1,6 @@
-const deleteBox = () => {
-  /* Eliminar elementos */
-  const container = document.getElementById('contenedor1');
-  const boxToDelete = container.querySelector('.caja');
-  if (boxToDelete) {
-    container.removeChild(boxToDelete);
-  } else {
-    console.log('theres no more box to delete');
-  }
-};
+const htmlBtnOne = document.getElementById('btnOne');
+const firtsBox = document.querySelector('.caja');
+htmlBtnOne.addEventListener('click', (event) => {
+  console.log(event);
+  firtsBox.classList.toggle('activa');
+});
