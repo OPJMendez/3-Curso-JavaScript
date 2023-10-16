@@ -1,14 +1,10 @@
-const htmlBtnOne = document.getElementById('btnOne');
-const firtsBox = document.querySelector('.caja');
-htmlBtnOne.addEventListener('click', (event) => {
-  console.log(event);
-  firtsBox.classList.toggle('activa');
+const container = document.getElementById('contenedor1');
+
+container.addEventListener('click', (event) => {
+  console.log('Click en el contenedor');
 });
 
-const allBoxes = document.querySelectorAll('.caja');
-
-allBoxes.forEach((box) => {
-  box.addEventListener('click', (event) => {
-    console.log(`El usuario hizo click en la caja: ${event.target.innerHTML}`);
-  });
+const firstBox = document.querySelector('.caja');
+firstBox.addEventListener('click', (event) => {
+  console.log('click en la primera caja');
 });
