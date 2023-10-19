@@ -1,10 +1,8 @@
 const formulario = document.forms['formulario-donacion'];
 
-formulario.addEventListener('submit', (event) => {
-  event.preventDefault();
-  console.log('Enviando datos');
+formulario.correo.addEventListener('keydown', (event) => {
+  console.log(`La tecla: ${event.key} fue presionada`);
 });
-
-formulario.pais.addEventListener('change', () => {
-  console.log('el pais cambio');
+formulario.correo.addEventListener('keyup', (event) => {
+  console.log(`La tecla: ${event.key} dejo de ser presionada`);
 });
