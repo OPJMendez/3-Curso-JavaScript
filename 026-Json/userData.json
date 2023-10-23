@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "name": "James",
+    "activeMember": true,
+    "post":[
+        {
+            "id":1,
+            "title":"first post title",
+            "text":"first post text"
+        },
+        {
+            "id":2,
+            "title":"second post title",
+            "text":"second post text"
+        }
+    ]
+}

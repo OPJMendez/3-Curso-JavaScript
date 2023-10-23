@@ -1,17 +1,9 @@
-new Date();
-const fechaActual = new Date();
+const endPoint = 'https://api.npoint.io/ed8bd229e80e1229ee8f';
 
-// como objeto
-console.log(fechaActual.toString());
+const getData = async () => {
+  const serverResponse = await fetch(endPoint);
+  const responseData = await serverResponse.json();
+  console.log(responseData);
+};
 
-// como string
-console.log(fechaActual.toDateString());
-
-// obtener la hora
-console.log(fechaActual.toTimeString());
-
-// obtener el mes, (obtiene el número del mes)
-console.log(fechaActual.getMonth());
-
-// obtener el año
-console.log(fechaActual.getFullYear());
+getData();
